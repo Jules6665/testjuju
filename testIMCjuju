@@ -1,0 +1,1 @@
+Height=float(input("Entrez votre taille en centimètres: "))
