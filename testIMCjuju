@@ -1,1 +1,2 @@
 Height=float(input("Entrez votre taille en centimètres: "))
+Weight=float(input("Entrez votre Poids en Kg: "))
