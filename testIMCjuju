@@ -4,3 +4,5 @@ Weight=float(input("Entrez votre Poids en Kg: "))
 Height = Height/100
 
 Height=float(input("Entrez votre taille en centimètres: "))
+
+Height = Height+1000/388887777
