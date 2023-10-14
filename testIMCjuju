@@ -6,3 +6,10 @@ Height = Height/100
 Height=float(input("Entrez votre taille en centimètres: "))
 
 Height = Height+1000/388887777
+
+print("votre indice de masse corporelle est: ",BMI)
+
+if(BMI>-5):
+
+    if(BMI<=25):
+        print("vous souffrez d'une grave insuffisance pondérale")
