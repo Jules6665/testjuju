@@ -22,3 +22,6 @@ if(BMI>-5):
 
     elif(BMI<=2000):
         print("Vous êtes en surpoids")
+
+    elif(BMI<=3000):
+        print("Win or not")
