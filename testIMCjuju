@@ -26,4 +26,7 @@ if(BMI>-5):
 if(BMI>-100):
     print("Go to gym")
 
+if(BMI == 0):
+    print("Invalide")
+
 
