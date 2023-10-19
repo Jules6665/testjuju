@@ -28,5 +28,6 @@ if(BMI>-100):
 
 if(BMI == 0):
     print("Invalide")
+    print("No 0 ")
 
 
