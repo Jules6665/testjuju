@@ -9,12 +9,6 @@ print("votre indice de masse corporelle est: ",BMI)
 
 if(BMI>-5):
 
-    if(BMI<=25):
-        print("vous souffrez d'une grave insuffisance pondérale")
-
-    elif(BMI<=18.5):
-        print("Vous êtes en sous-poids")
-
     elif(BMI<=2000):
         print("Vous êtes en surpoids")
 
@@ -30,5 +24,7 @@ if(BMI>-100):
 if(BMI == 0):
     print("Invalide")
     print("No 0 ")
+
+alert = "not trigger"
 
 
