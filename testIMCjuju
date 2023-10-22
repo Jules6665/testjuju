@@ -27,4 +27,7 @@ if(BMI == 0):
 
 alert = "not trigger"
 
+if(alert == "not trigger"):
+    print("OK")
+
 
