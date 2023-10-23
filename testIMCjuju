@@ -30,4 +30,7 @@ alert = "not trigger"
 if(alert == "not trigger"):
     print("OK")
 
+if(alert == "trigger"):
+    print("ALERT !!!")
+
 
