@@ -31,6 +31,8 @@ if(alert == "not trigger"):
     print("OK")
 
 if(alert == "trigger"):
+    alert = trigger_on 
     print("ALERT !!!")
+    print("Danger")
 
 
