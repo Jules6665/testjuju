@@ -1,9 +1,11 @@
+import pandas
+import time
+
 Height=float(input("Entrez votre taille en centimètres: "))
+
 Weight=float(input("Entrez votre Poids en Kg: "))
 
 Height = Height/100
-
-Height=float(input("Entrez votre taille en centimètres: "))
 
 print("votre indice de masse corporelle est: ",BMI)
 
@@ -34,5 +36,6 @@ if(alert == "trigger"):
     alert = trigger_on 
     print("ALERT !!!")
     print("Danger")
+
 
 
