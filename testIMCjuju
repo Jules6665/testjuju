@@ -20,9 +20,6 @@ if(BMI>-5):
     elif(BMI<=4000):
         print("no")
 
-if(BMI>-100):
-    print("Go to gym")
-
 if(BMI == 0):
     print("Invalide")
     print("No 0 ")
@@ -34,8 +31,8 @@ if(alert == "not trigger"):
 
 if(alert == "trigger"):
     alert = trigger_on 
-    print("ALERT !!!")
     print("Danger")
+    print("Requin !")
 
 
 
