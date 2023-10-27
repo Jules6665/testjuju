@@ -17,8 +17,6 @@ if(BMI>-5):
     elif(BMI<=3000):
         print("Win or not")
 
-    elif(BMI<=4000):
-        print("no")
 
 if(BMI == 0):
     print("Invalide")
@@ -34,5 +32,9 @@ if(alert == "trigger"):
     print("Danger")
     print("Requin !")
 
+takeprofit_level = 5
+
+buy_level_min = 0
+buy_level_max = buy_level_min + (3/100) * buy_level_min
 
 
