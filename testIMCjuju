@@ -17,11 +17,6 @@ if(BMI>-5):
     elif(BMI<=3000):
         print("Win or not")
 
-
-if(BMI == 0):
-    print("Invalide")
-    print("No 0 ")
-
 alert = "not trigger"
 
 if(alert == "not trigger"):
@@ -39,5 +34,7 @@ buy_level_max = buy_level_min + (3/100) * buy_level_min
 
 sell_level_min = 0
 sell_level_max = sell_level_min - (3/100) * sell_level_min
+
+print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
 
