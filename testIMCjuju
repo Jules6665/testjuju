@@ -20,12 +20,15 @@ if(BMI>-5):
 alert = "not trigger"
 
 if(alert == "not trigger"):
-    print("OK")
+    print("not trigger")
 
 if(alert == "trigger"):
     alert = trigger_on 
     print("Danger")
     print("Requin !")
+
+stoploss_level_1 = False
+stoploss_level_2 = True
 
 takeprofit_level = 5
 
@@ -34,6 +37,7 @@ buy_level_max = buy_level_min + (3/100) * buy_level_min
 
 sell_level_min = 0
 sell_level_max = sell_level_min - (3/100) * sell_level_min
+
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
