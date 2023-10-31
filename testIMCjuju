@@ -41,4 +41,10 @@ sell_level_max = sell_level_min - (3/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
+while (bot_in_action == True) :
 
+    try :
+
+        #Catch information from the last candles
+
+        unix_timestamp_for_21 = int(time.time())-(21*5*60)
