@@ -5,7 +5,7 @@ Height=float(input("Entrez votre taille en centimètres: "))
 
 Weight=float(input("Entrez votre Poids en Kg: "))
 
-Height = Height/100
+Height = Height/1000
 
 print("votre indice de masse corporelle est: ",BMI)
 
@@ -26,6 +26,9 @@ if(alert == "trigger"):
     alert = trigger_on 
     print("Danger")
     print("Requin !")
+
+position_opening_next_candle_time = False
+position_opening_next_candle_is_open = False
 
 stoploss_level_1 = True
 stoploss_level_2 = True
