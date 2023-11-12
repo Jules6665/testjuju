@@ -33,7 +33,7 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = True
 stoploss_level_2 = False
 
-takeprofit_level = 1000
+takeprofit_level = 1050
 
 buy_level_min = 18322
 buy_level_max = buy_level_min + (3.9/100) * buy_level_min
@@ -57,3 +57,4 @@ while (bot_in_action == True) :
         pandas_response_kline_close = pandas_response_kline["close"]
         pandas_response_kline_high = pandas_response_kline["high"]
         pandas_response_kline_low = pandas_response_kline["low"]
+        pandas_response_kline_open_time = pandas_response_kline["open_time"]
