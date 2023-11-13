@@ -5,7 +5,7 @@ Height=float(input("Entrez votre taille en centimètres: "))
 
 Weight=float(input("Entrez votre Poids en Kg: "))
 
-Height = Height/1990
+Height = Height/10
 
 print("votre indice de masse corporelle est: ",BMI)
 
@@ -33,12 +33,12 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = True
 stoploss_level_2 = False
 
-takeprofit_level = 1050
+takeprofit_level = 1950
 
-buy_level_min = 18322
+buy_level_min = 18455
 buy_level_max = buy_level_min + (3.9/100) * buy_level_min
 
-sell_level_min = 45696
+sell_level_min = 58925
 sell_level_max = sell_level_min - (3.9/100) * sell_level_min
 
 
