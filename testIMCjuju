@@ -17,10 +17,10 @@ if(BMI>-5):
     elif(BMI<=300):
         print("Win or not")
 
-alert = "not trigger"
+alert = "not trigger or not"
 
 if(alert == "not trigger"):
-    print("not trigger")
+    print("not trigger or not")
 
 if(alert == "trigger"):
     alert = trigger_on 
@@ -31,9 +31,9 @@ position_opening_next_candle_time = False
 position_opening_next_candle_is_open = False
 
 stoploss_level_1 = True
-stoploss_level_2 = False
+stoploss_level_2 = True
 
-takeprofit_level = 1950
+takeprofit_level = 1944
 
 buy_level_min = 18455
 buy_level_max = buy_level_min + (3.9/100) * buy_level_min
