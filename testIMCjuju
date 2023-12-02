@@ -12,10 +12,10 @@ print("votre indice de masse corporelle est: ",BMI)
 if(BMI>5):
 
     elif(BMI<=100):
-        print("Vous êtes en surpoids")
+        print("Vous êtes en surpoids, oui")
 
     elif(BMI<=500):
-        print("Win or not")
+        print("Win")
 
 alert = "trigger"
 
@@ -32,7 +32,7 @@ position_opening_next_candle_time = False
 position_opening_next_candle_is_open = True
 
 stoploss_level_1 = True
-stoploss_level_2 = True
+stoploss_level_2 = False
 stoploss_level_3 = True
 stoploss_level_4 = False
 
@@ -85,3 +85,10 @@ while (bot_in_action == True) :
         response_order = session.query_active_order(symbol="BTCUSDT")["result"]
         response_conditional_order = session.query_conditional_order(symbol="BTCUSDT")["result"]
         order_number = len(response_order) + len(response_conditional_order)
+
+        if(startup_info == False) :
+
+            #Display startup information
+
+            print(f"Risque : {stoploss_value} $")
+            print(f"Effet de levier : {response_position['leverage']}")
