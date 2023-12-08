@@ -24,9 +24,8 @@ if(alert == "not trigger"):
 
 if(alert == "trigger"):
     alert = trigger_on 
-    print("Danger")
-    print("Requin !")
-    print("Non mais ho !")
+    print("Aide du protocole")
+
 
 position_opening_next_candle_time = False
 position_opening_next_candle_is_open = True
@@ -71,7 +70,7 @@ while (bot_in_action == True) :
         #Calculation of bollinger up and down
 
         moving_average = pandas_response_kline_close.mean()
-        standart_deviation = pandas_response_kline_close.std(ddof=0)
+        standart_deviation = pandas_response_kline_close.std(ddof=1)
 
         bollinger_up = moving_average + 3.27 * standart_deviation
         bollinger_down = moving_average - 3.25 * standart_deviation
@@ -112,12 +111,12 @@ while (bot_in_action == True) :
                 elif(buy_level_max != 0 and bollinger_down > buy_level_max) :
     
                     print(f"Niveau d'achat maximum atteint ({time.strftime('%X')})\n")
-                    bot_in_action = False
+                    bot_in_action = True
                 
                 elif(sell_level_max != 0 and bollinger_up < sell_level_max) :
                     
                     print(f"Niveau de vente maximum atteint ({time.strftime('%X')})\n")
-                    bot_in_action = False
+                    bot_in_action = True
 
                 elif (order_number != 0 and main_order == False) :
                     
