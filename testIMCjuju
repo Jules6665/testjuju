@@ -27,20 +27,20 @@ if(alert == "trigger"):
     print("Aide du protocole")
 
 
-position_opening_next_candle_time = False
+position_opening_next_candle_time = True
 position_opening_next_candle_is_open = True
 
 stoploss_level_1 = True
 stoploss_level_2 = False
 stoploss_level_3 = True
-stoploss_level_4 = False
+stoploss_level_4 = True
 
 takeprofit_level = 10550
 
-buy_level_min = 13700
+buy_level_min = 11799
 buy_level_max = buy_level_min + (2.75/100) * buy_level_min
 
-sell_level_min = 55800
+sell_level_min = 51899
 sell_level_max = sell_level_min - (2.75/100) * sell_level_min
 
 
@@ -106,7 +106,7 @@ while (bot_in_action == True) :
                 if (was_in_position == True) :
     
                     print(f"Trade terminé ({time.strftime('%X')})\n")
-                    bot_in_action = False
+                    bot_in_action = True
 
                 elif(buy_level_max != 0 and bollinger_down > buy_level_max) :
     
