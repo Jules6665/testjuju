@@ -32,16 +32,16 @@ position_opening_next_candle_is_open = True
 
 stoploss_level_1 = True
 stoploss_level_2 = False
-stoploss_level_3 = True
+stoploss_level_3 = False
 stoploss_level_4 = True
 
 takeprofit_level = 10550
 
-buy_level_min = 11799
-buy_level_max = buy_level_min + (2.75/100) * buy_level_min
+buy_level_min = 15000
+buy_level_max = buy_level_min + (3.75/100) * buy_level_min
 
-sell_level_min = 51899
-sell_level_max = sell_level_min - (2.75/100) * sell_level_min
+sell_level_min = 52000
+sell_level_max = sell_level_min - (3.75/100) * sell_level_min
 
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
@@ -72,8 +72,8 @@ while (bot_in_action == True) :
         moving_average = pandas_response_kline_close.mean()
         standart_deviation = pandas_response_kline_close.std(ddof=1)
 
-        bollinger_up = moving_average + 3.27 * standart_deviation
-        bollinger_down = moving_average - 3.25 * standart_deviation
+        bollinger_up = moving_average + 3.75 * standart_deviation
+        bollinger_down = moving_average - 3.75 * standart_deviation
 
         round_bollinger_up = round(bollinger_up,2)
         round_bollinger_down = round(bollinger_down,2)
