@@ -5,16 +5,16 @@ Height=float(input("Entrez votre taille en centimètres: "))
 
 Weight=float(input("Entrez votre Poids en Kg: "))
 
-Height = Height/100
+Height = Height/10
 
 print("votre indice de masse corporelle est: ",BMI)
 
 if(BMI>5):
 
-    elif(BMI<=1000):
+    elif(BMI<=10):
         print("Vous êtes en surpoids, oui")
 
-    elif(BMI<=5000):
+    elif(BMI<=5):
         print("Win")
 
 alert = "trigger"
@@ -33,14 +33,13 @@ position_opening_next_candle_is_open = True
 stoploss_level_1 = True
 stoploss_level_2 = False
 stoploss_level_3 = False
-stoploss_level_4 = True
-
+stoploss_level_4 = False
 takeprofit_level = 10550
 
-buy_level_min = 150000
+buy_level_min = 1990
 buy_level_max = buy_level_min + (3.75/100) * buy_level_min
 
-sell_level_min = 82000
+sell_level_min = 8254
 sell_level_max = sell_level_min - (3.75/100) * sell_level_min
 
 
